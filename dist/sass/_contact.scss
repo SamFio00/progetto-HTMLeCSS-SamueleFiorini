@@ -63,12 +63,14 @@ p {
 form {
   background-color: rgba(70, 69, 69, 0.4);
   padding: 35px;
+  border: 1px solid #ddd;
   border-radius: 30px;
+  @include transition-elements-second;
 
   .btn {
     border: 1px solid #ddd;
     border-radius: 30px;
-    background-color: rgba(70, 69, 69, 0.4);
+    background-color: rgba(0, 0, 0, 0.644);
     color: #ffffff;
     box-shadow: #ddd;
     transition: all 0.3s ease;

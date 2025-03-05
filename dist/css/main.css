@@ -87,12 +87,23 @@ body {
 form {
   background-color: rgba(70, 69, 69, 0.4);
   padding: 35px;
+  border: 1px solid #ddd;
   border-radius: 30px;
+  opacity: 0;
+  animation: show 1s ease-in-out 1.8s forwards;
+}
+@keyframes show {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
 }
 form .btn {
   border: 1px solid #ddd;
   border-radius: 30px;
-  background-color: rgba(70, 69, 69, 0.4);
+  background-color: rgba(0, 0, 0, 0.644);
   color: #ffffff;
   box-shadow: #ddd;
   transition: all 0.3s ease;
@@ -201,8 +212,38 @@ footer ul li a {
 .my-projects h1 {
   font-size: 100px;
 }
-.my-projects p {
-  font-size: 24px;
+.my-projects .container-projectscards {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+  opacity: 0;
+  animation: show 1s ease-in-out 1.8s forwards;
+}
+@keyframes show {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+.my-projects .container-projectscards .card {
+  background-color: rgba(70, 69, 69, 0.4);
+  border: 1px solid #ddd;
+  color: #fff;
+  padding: 35px;
+  border-radius: 30px;
+}
+.my-projects .container-projectscards .card .btn {
+  border: 1px solid #ddd;
+  border-radius: 30px;
+  background-color: rgba(0, 0, 0, 0.644);
+  color: #ffffff;
+  box-shadow: #ddd;
+  transition: all 0.3s ease;
+}
+.my-projects .container-projectscards .card .btn:hover {
+  transform: scale(1.1);
 }
 
 footer {
